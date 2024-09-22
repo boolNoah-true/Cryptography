@@ -4,4 +4,6 @@ project(Cryptography)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Cryptography
-        main.cpp)
+        main.cpp
+        genKeys.cpp
+        genKeys.h)
