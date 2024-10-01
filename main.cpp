@@ -13,7 +13,7 @@ int main() {
     linear lin;
 
     vector<vector<long long>> matrix = lin.generateMatrix();
-
+    cout << "run" << endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++){
             cout << matrix[i][j] << " ";
@@ -23,7 +23,7 @@ int main() {
 
 
 
-    lin.findDeter(matrix);
+    cout << lin.findDeter(matrix);
 
 
 
