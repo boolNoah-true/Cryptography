@@ -16,4 +16,6 @@ add_executable(Cryptography
         menu.cpp
         menu.h
         linear.cpp
-        linear.h)
+        linear.h
+        breakString.cpp
+        breakString.h)

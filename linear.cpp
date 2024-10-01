@@ -44,7 +44,7 @@ std::vector<std::vector<long long>> linear::generateMatrix() {
     };
 
     int randNum = std::rand() % 3 + 1;
-
+    int scalar = std::rand() % 1000 + 1;
     if (randNum == 1) {
         chosen = a;
     } else
@@ -58,7 +58,7 @@ std::vector<std::vector<long long>> linear::generateMatrix() {
         std::vector<long long> row;
         for (int j = 2; j >= 0; j--) {
 
-            row.push_back(chosen[i][j]);
+            row.push_back(chosen[i][j]*scalar);
 
         }
 
@@ -86,7 +86,11 @@ long long linear::findDeter(std::vector<std::vector<long long>>& matrix){
     long long mb = b*((d*i) - (f*g));
     long long mc = c*((d*h) - (e*g));
 
-    long long determinant = ma - mb - mc;
+    std::cout << ma << " " << mb << " " << mc << std::endl;
+
+
+
+    long long determinant = ma - mb + mc;
 
 
 
@@ -114,8 +118,8 @@ std::vector<long long> linear::multiply() {
 }
 
 std::vector<std::vector<long long>> linear::inverse(std::vector<std::vector<long long>>& matrix) {
-     std::vector<std::vector<long long>> inversed;
-
+    std::vector<std::vector<long long>> inversed;
+    std::vector<std::vector<long long>> temp;
 
     long long a = matrix[0][0];
     long long b = matrix[0][1];
@@ -131,7 +135,7 @@ std::vector<std::vector<long long>> linear::inverse(std::vector<std::vector<long
     long long mb = ((d*i) - (f*g));
     long long mc = ((d*h) - (e*g));
 
-    long long md = (b*i) - (c*h));
+    long long md = ((b*i) - (c*h));
     long long me = ((a*i) - (c*g));
     long long mf = ((a*h) - (b*g));
 
@@ -150,11 +154,44 @@ std::vector<std::vector<long long>> linear::inverse(std::vector<std::vector<long
            k++;
         }
 
+        temp.push_back(row);
 
+    }
+
+    std::cout << "Pre Transpose: " << std::endl;
+
+    for(int x = 0; x < 3; x++) {
+        for (int y = 0; y < 3; y++) {
+            std::cout << temp[x][y] << " ";
+        }
+
+        std::cout << std::endl;
     }
 
 
 
+    for (int x = 0; x < 3; x++) {
+        std::vector<long long> row;
+        for (int y = 0; y < 3; y++) {
 
+            row.push_back(temp[y][x]);
+
+        }
+
+        inversed.push_back(row);
+
+    }
+std::cout << std::endl;
+    std::cout << "Transpose: " << std::endl;
+
+    for(int x = 0; x < 3; x++) {
+        for (int y = 0; y < 3; y++) {
+            std::cout << inversed[x][y] << " ";
+        }
+
+        std::cout << std::endl;
+    }
+
+    return inversed;
 
 }

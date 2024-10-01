@@ -1,16 +1,29 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-#include <windows.h>
+
 #include "linear.h"
+#include "breakString.h"
 #include <locale>
 #include <codecvt>
+#include <string>
 
 using namespace std;
 
 int main() {
-
+    breakString br;
     linear lin;
+    string s;
+    getline(cin, s);
+
+    vector<vector<int>> test = br.breakS(s);
+
+    for(int i = 0; i < test.size(); i++) {
+        for(int j = 0; j < test[i].size(); j++) {
+            cout << test[i][j] << " ";
+        }
+        cout << endl;
+    }
 
     vector<vector<long long>> matrix = lin.generateMatrix();
     cout << "run" << endl;
@@ -23,7 +36,9 @@ int main() {
 
 
 
-    cout << lin.findDeter(matrix);
+    cout << lin.findDeter(matrix) << endl << endl;
+
+    lin.inverse(matrix);
 
 
 
