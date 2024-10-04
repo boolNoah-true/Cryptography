@@ -113,7 +113,17 @@ long long linear::findDeter(std::vector<std::vector<long long>>& matrix){
 
 
 
-std::vector<long long> linear::multiply() {
+std::vector<long long> linear::multiply(std::vector<std::vector<long long>> matrix1, std::vector<long long> matrix2) {
+
+    std::vector<long long> result;
+
+    for (int i = 0; i < 3; ++i){
+        for (int j = 0; j < 3; ++j){
+            result[i] += matrix2[j] * matrix1[j][i];
+        }
+    }
+
+    return result;
 
 }
 

@@ -16,13 +16,13 @@ public:
 
     std::vector<std::vector<long long>> generateMatrix();
 
-    std::vector<long long> multiply();
+    std::vector<long long> multiply(std::vector<std::vector<long long>> matrix1, std::vector<long long> matrix2);
 
     std::vector<std::vector<long long>> inverse(std::vector<std::vector<long long>>& matrix);
 
     long long findDeter(std::vector<std::vector<long long>>& matrix);
 
-    std::vector<std::vector<long long>> findCofactors();
+
 
 
     int getScalar() const;

@@ -13,6 +13,12 @@
 using namespace std;
 
 int main() {
+
+
+
+
+
+
     breakString br;
     linear lin;
     string s;
