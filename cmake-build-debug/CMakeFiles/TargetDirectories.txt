@@ -1,3 +1,3 @@
-/home/nplusplus/Code/Github Repos/Cryptography/cmake-build-debug/CMakeFiles/Cryptography.dir
-/home/nplusplus/Code/Github Repos/Cryptography/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/nplusplus/Code/Github Repos/Cryptography/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+X:/Code Projs/Code/Cryptography/cmake-build-debug/CMakeFiles/Cryptography.dir
+X:/Code Projs/Code/Cryptography/cmake-build-debug/CMakeFiles/edit_cache.dir
+X:/Code Projs/Code/Cryptography/cmake-build-debug/CMakeFiles/rebuild_cache.dir

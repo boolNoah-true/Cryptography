@@ -32,19 +32,19 @@ std::vector<std::vector<long long>> linear::generateMatrix() {
     };
 
     std::vector<std::vector<long long>> b  = {
-            {8, 6, 7},
-            {5, 0, 1},
-            {2, 3, 4}
+            {1, 0, 0},
+            {4, 1, 0},
+            {3, 2, 1}
     };
 
     std::vector<std::vector<long long>> c  = {
-            {0, 4, 1},
-            {2, 3, 0},
-            {1, -1, 2}
+            {1, 1, 0},
+            {0, 1, 0},
+            {0, 0, 1}
     };
 
     int randNum = std::rand() % 3 + 1;
-    int scalar = std::rand() % 1000 + 1;
+
     if (randNum == 1) {
         chosen = a;
     } else
@@ -58,7 +58,7 @@ std::vector<std::vector<long long>> linear::generateMatrix() {
         std::vector<long long> row;
         for (int j = 2; j >= 0; j--) {
 
-            row.push_back(chosen[i][j]*scalar);
+            row.push_back(chosen[i][j]);
 
         }
 

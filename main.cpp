@@ -4,6 +4,8 @@
 
 #include "linear.h"
 #include "breakString.h"
+#include "genKeys.h"
+
 #include <locale>
 #include <codecvt>
 #include <string>
@@ -15,6 +17,10 @@ int main() {
     linear lin;
     string s;
     getline(cin, s);
+
+    genKeys gk;
+
+    gk.writeKey("test");
 
     vector<vector<int>> test = br.breakS(s);
 
