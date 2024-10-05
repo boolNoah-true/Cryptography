@@ -5,6 +5,7 @@
 #include "encrypt.h"
 #include "breakString.h"
 #include "linear.h"
+#include "genKeys.h"
 
 #include <iostream>
 #include <fstream>
@@ -31,15 +32,17 @@ void encrypt::encryptText(const string& path, const string& s) {
     breakString bs;
     linear lin;
     ofstream file(path);
-
+    genKeys gk;
 
     if(!file.is_open()) {
         cerr << "Failed to open file: " << path << endl;
         return;
     }
+    string keyPath;
+    cout << "Enter path to the public key" << endl;
+    getline(cin, keyPath);
 
-
-    vector<vector<long long>> matrix = lin.generateMatrix();
+    vector<vector<long long>> matrix = gk.readKey(keyPath, 1);
     vector<vector<long long>> vec = bs.breakS(s);
 
     for (int i = 0; i < vec.size(); ++i) {
@@ -48,7 +51,7 @@ void encrypt::encryptText(const string& path, const string& s) {
     }
 
     for (int i = 0; i < vec.size(); ++i) {
-        for(int j = 0; j < 3; ++j) {
+        for (int j = 0; j < 3; ++j) {
             file << vec[i][j] << " ";
         }
     }

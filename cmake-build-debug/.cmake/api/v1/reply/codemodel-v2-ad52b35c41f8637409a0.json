@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug",
-		"source" : "C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography"
+		"build" : "X:/Code Projs/Code/Cryptography/cmake-build-debug",
+		"source" : "X:/Code Projs/Code/Cryptography"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 5
 	}
 }

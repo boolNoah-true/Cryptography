@@ -49,7 +49,10 @@ void menu::start(bool validInput) {
     switch (userInput) {
         case 1:
 
-            cout << "This feature is not implemented" << endl;
+            cout << "Enter the path to store your keys: " << endl;
+            getline(cin, path);
+
+            gk.writeKey(path);
 
             start(true);
 
