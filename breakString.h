@@ -10,7 +10,7 @@
 
 class breakString {
 public:
-    std::vector<std::vector<int>> breakS(const std::string& s);
+    std::vector<std::vector<long long>> breakS(const std::string& s);
 
 };
 

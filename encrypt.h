@@ -5,9 +5,14 @@
 #ifndef CRYPTOGRAPHY_ENCRYPT_H
 #define CRYPTOGRAPHY_ENCRYPT_H
 
+#include <string>
+
 
 class encrypt {
+public:
+    bool isValidPath(const std::string& path);
 
+    void encryptText(const std::string& path, const std::string& s);
 };
 
 

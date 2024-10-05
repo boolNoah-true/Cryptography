@@ -11,7 +11,7 @@
 class genKeys {
 public:
 
- std::vector<std::vector<long long>> readKey(std::string path);
+ std::vector<std::vector<long long>> readKey(std::string path, int choice);
 
  std::vector<std::vector<long long>> writeKey(std::string path);
 

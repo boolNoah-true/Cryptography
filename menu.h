@@ -10,7 +10,7 @@
 class menu {
 public:
 
-    bool isValidPath(const std::string& path);
+
 
     void start(bool validInput);
 

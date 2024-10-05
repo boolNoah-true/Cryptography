@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Cryptography"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Cryptography">
+				<Option output="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Cryptography.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cryptography"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Cryptography/fast">
+				<Option output="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Cryptography.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cryptography/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/breakString.cpp">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/breakString.h">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/decrypt.cpp">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/decrypt.h">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/encrypt.cpp">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/encrypt.h">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/genKeys.cpp">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/genKeys.h">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/linear.cpp">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/linear.h">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/main.cpp">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/menu.cpp">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/menu.h">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/readKeys.cpp">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/readKeys.h">
+			<Option target="Cryptography"/>
+		</Unit>
+		<Unit filename="C:/Users/noahl/OneDrive/Documents/Code/GItHub Repo/Cryptography/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

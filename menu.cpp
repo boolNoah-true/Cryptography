@@ -4,30 +4,23 @@
 
 #include "menu.h"
 #include "genKeys.h"
+#include "encrypt.h"
+#include "decrypt.h"
 
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <limits>
 
 using namespace std;
 
-bool menu::isValidPath(const std::string &path) {
 
-    ofstream file(path, ios::binary);
-
-    if(!file) {
-        return false;
-    }
-
-    file.close();
-    return true;
-
-}
 
 void menu::start(bool validInput) {
 
     genKeys gk;
-
+    encrypt enc;
+    decrypt dec;
 
     cout << "Matrix Encryption Software" << endl;
     cout << "---------------------------------------" << endl;
@@ -42,38 +35,48 @@ void menu::start(bool validInput) {
 
     int userInput = 0;
 
-    cout << "1. Generate Keys" << endl;
+    cout << "1. Generate Keys(Not implemented)" << endl;
     cout << "2. Encrypt" << endl;
     cout << "3. Decrypt" << endl;
     cout << "4. Quit" << endl;
 
     cin >> userInput;
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    string path;
+    string plainText;
 
     switch (userInput) {
         case 1:
-            string path;
-            while (true) {
-                path = "";
-                cout << "Enter path for file" << endl;
-                getline(cin, path);
 
-                if (isValidPath(path)) {
-                    cout << "Valid path. Ready to write the binary file." << endl;
-                    break; // Exit loop if path is valid
-                } else {
-                    cerr << "Invalid path. Please enter a valid path." << endl;
-                }
-            }
-            gk.writeKey(path);
+            cout << "This feature is not implemented" << endl;
+
+            start(true);
+
             break;
         case 2:
+
+            cout << "Enter text you would like to encrypt: " << endl;
+            getline(cin, plainText);
+
+                cout << "Enter path for file" << endl;
+                getline(cin, path);
+                enc.encryptText(path, plainText);
+
+
+            cin.ignore();
+            start(true);
 
             break;
         case 3:
 
+                cout << "Enter path for file you want to decrypt" << endl;
+                getline(cin, path);
+
+                dec.decryptText(path);
+
             break;
-        case 4:
-            break;
+
         default:
             start(false);
             break;
