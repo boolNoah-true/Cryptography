@@ -47,7 +47,6 @@ void encrypt::encryptText(const string& path, const string& s) {
 
     for (int i = 0; i < vec.size(); ++i) {
         vec[i] = lin.multiply(matrix, vec[i]);
-        cout << vec[i][1] << " ";
     }
 
     for (int i = 0; i < vec.size(); ++i) {

@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <fstream>
-#include <sstream>
 #include <vector>
 #include <string>
 
@@ -33,6 +32,7 @@ void decrypt::decryptText(const string& path) {
             row.push_back(num);
             v.push_back(row);
             row.clear();
+            i = 0;
         }
         else {
             row.push_back(num);
@@ -42,6 +42,10 @@ void decrypt::decryptText(const string& path) {
 
 
     }
+
+
+
+
     string keyPath;
     cout << "Enter path to the private key" << endl;
     getline(cin, keyPath);
@@ -51,20 +55,20 @@ void decrypt::decryptText(const string& path) {
 
 
     for (int i = 0; i < v.size(); ++i) {
+
         v[i] = lin.multiply(matrix, v[i]);
-        cout << v[i][1] << " ";
+
     }
 
     string cipher;
 
     for (int i = 0; i < v.size(); ++i){
-        cout << v[1][i] <<endl;
-        long long j = (v[1][i])/100;
+
+        long long j = (v[i][1])/100;
 
 
-        char c = static_cast<int>(j) + '0';
+        char c = static_cast<char>(static_cast<int>(j));
         cipher += c;
-
     }
 
     cout << "This text reads as follows: " << endl;

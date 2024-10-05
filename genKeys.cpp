@@ -39,7 +39,11 @@ std::vector<std::vector<long long>> genKeys::readKey(std::string path, int choic
             return{};
         }
 
-        inputFile.read(reinterpret_cast<char*>(matrix[0].data()), 3 * 3 * sizeof(long long));
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 3; ++j) {
+                inputFile.read(reinterpret_cast<char*>(&matrix[i][j]), sizeof(matrix[i][j]));
+            }
+        }
 
         inputFile.close();
         return matrix;
@@ -51,9 +55,15 @@ std::vector<std::vector<long long>> genKeys::readKey(std::string path, int choic
             return{};
         }
 
-        inputFile2.read(reinterpret_cast<char*>(inverse[0].data()), 3 * 3 * sizeof(long long));
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 3; ++j) {
+                inputFile2.read(reinterpret_cast<char*>(&inverse[i][j]), sizeof(inverse[i][j]));
+            }
+        }
 
         inputFile2.close();
+
+
         return inverse;
     }
 
@@ -84,13 +94,14 @@ void genKeys::writeKey(std::string path) {
         std::cerr << "Error opening file!" << std::endl;
         return;
     }
+
     for(int i = 0; i < 3; ++i){
         for(int j = 0; j < 3; ++j){
             long long number = matrix[i][j];
-            std::cout << matrix[i][j] << " ";
+
             binaryFile.write(reinterpret_cast<const char*>(&number), sizeof(number));
         }
-        std::cout << std::endl;
+
     }
 
 
@@ -104,14 +115,15 @@ void genKeys::writeKey(std::string path) {
         std::cerr << "Error opening file!" << std::endl;
         return;
     }
+
     for(int i = 0; i < 3; ++i){
         for(int j = 0; j < 3; ++j){
             long long number = inverse[i][j];
-            std::cout << "This is the inverse" << std::endl;
-            std::cout << inverse[i][j] << " ";
+
+
             binaryFile2.write(reinterpret_cast<const char*>(&number), sizeof(number));
         }
-        std::cout << std::endl;
+
     }
 
 

@@ -14,7 +14,7 @@ std::vector<std::vector<long long>> breakString::breakS (const std::string& s) {
 
 
     for (char c : s) {
-        int i = c - '0';
+        int i = static_cast<int>(c);
         std::vector<long long> row = {std::rand() % 1000 + 1, (i*100) + std::rand() % 99 + 0, std::rand() % 1000 + 1};
         list.push_back(row);
     }

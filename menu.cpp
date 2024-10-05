@@ -78,7 +78,11 @@ void menu::start(bool validInput) {
 
                 dec.decryptText(path);
 
+                start(true);
             break;
+        case 4:
+
+            return;
 
         default:
             start(false);
